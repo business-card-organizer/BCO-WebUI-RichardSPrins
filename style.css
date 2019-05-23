@@ -1,0 +1,241 @@
+body, html{
+  height: 100%;
+  margin: 0px;
+  font-size: 16px;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  /* line-height: 1.8em; */
+  color: #666;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #666;
+  flex-wrap: wrap;
+}
+nav.footer-nav{
+  display: flex;
+  justify-content: center;
+}
+nav img {
+  width: 100%;
+  padding: 10px;
+}
+nav a {
+  padding: 10px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  width: 200px;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+.pimg1, .pimg2, .pimg3{
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  /* 
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment: fixed
+}
+
+.pimg1{
+  background-image: url(imgs/daria-shevtsova-57340-unsplash.jpg);
+  min-height: 100%;
+}
+
+.pimg2{
+  background-image: url(imgs/download4.jpg);
+  min-height: 400px;
+}
+
+.pimg3{
+  background-image: url(imgs/pic3.jpg);
+  min-height: 400px;
+}
+img.qr{
+  width: 150px;
+  height: 150px;
+}
+img.view{
+  height: 100%;
+  width: 100%;
+}
+.section{
+  display: flex;
+  /* text-align: center; */
+  padding: 50px 80px;
+}
+.info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-img{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+section h2 {
+  color: rgb(243, 138, 138);
+}
+
+.social-media{
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+.media-links{
+  display: flex;
+  justify-content: center;
+  background-color: #666;
+}
+
+.ptext{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .button{
+  background-color: rgb(255, 97, 97);
+  color: white;
+  padding: 20px;
+}
+.ptext .button a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media(min-width: 1000px){
+  nav a {
+    padding: 30px;
+    /* margin-top: 15px; */
+    /* text-decoration: none;
+    color: white; */
+  }
+  nav img {
+    margin-top: 15px;
+  }
+}
+@media(max-width: 568px){
+
+  .pimg1, .pimg2, .pimg3{
+    background-attachment: scroll;
+  }
+  .section-img {
+    display: flex;
+    align-content: center;
+  }
+  .info{
+    text-align:center;
+  }
+  /* .view{
+    width: 100%;
+    height: 100%;
+  } */
+}
+
+@media(max-width: 750px){
+  .section-1 img{
+    width: 320px;
+    height: 220px;
+  }
+  /* .section-3 img{
+    width: 30%;
+    height: 30%;
+  } */
+}
+@media(max-width: 900px){
+  section {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(max-width: 500px){ 
+  nav{
+    justify-content: space-around;
+  }
+}
+@media(max-width: 410px){
+  nav{
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+.about h1 {
+  color: rgb(255, 97, 97);
+}
+.about{
+  width: 60%;
+  margin: 0 auto;
+  padding: 40px;
+  /* height: 61vh; */
+}
+.team {
+  width: 60%;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  /* height: 61vh; */
+}
+.team h1 {
+  color: rgb(255, 97, 97);
+}
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin: 0 auto; */
+}
+.member{
+  width: 29%;
+  /* display: flex; */
+  /* justify-content: center; */
+  padding: 20px;
+  text-align: center;
+}
+.member img{
+  width: 80%;
+  height: 60%;
+  padding: 10px;
+}
+@media(max-width: 1300px){
+  .member{
+    width: 33%;
+  }
+}
+@media(max-width: 1000px){
+  .member{
+    width: 55%;
+    height: 30%
+  }
+}
+@media(max-width: 700px){
+  .member{
+    width: 80%;
+    height: 30%
+  }
+}
